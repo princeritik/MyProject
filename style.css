@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-baar{
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 0.9rem 0.5rem;
+}
+.menu-botton{
+    height: 3.5rem;
+}
+.main-baar{
+    max-width: 1280px;
+    display: flex;
+    margin-top: 2rem;
+    padding: 0px 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+.main-left{
+    padding-left: 1rem;
+}
+.main-right{
+    padding-left: 7rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.discount{
+    width: fit-content;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgb(12, 164, 12);
+}
+.main-text{
+    font-size: 4.5rem;
+    width: 95%;
+}
+.main-desc{
+    font-size: 1.2rem;
+}
+.explore-button{
+    font-size: 0.9rem;
+    border: none;
+    width: fit-content;
+    padding: 0.5rem 0.8rem;
+    background-color: rgba(255, 166, 0, 0.733);
+}
+.explore-button:hover{
+    background-color: rgba(255, 166, 0, 0.571);
+}
+
+ /* testimonial */
+ .testimonial{
+    padding: 0 1rem;
+    display: flex;
+    gap: 1rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid rgb(211, 203, 203);
+ }
+ .testimonial-card{
+    display: flex;
+    gap: 0.9rem;
+    padding: 1rem 1rem;
+    transition: box-shadow 0.3s;
+ }
+ .testimonial-card:hover{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    border-radius: 0.5rem;
+ }
+ .testimonial-logo{
+    height: 4rem;
+ }
+ .testimonial-head{
+    font-size: 1.2rem;
+    font-weight: 600;
+ }
+ .testimonial-desc{
+    font-size: 1.2rem;
+    color: rgb(72, 70, 70);
+ }
+
+ /* <!-- photo section --> */
+ .photo-section{
+    padding: 2.5rem 1rem;
+    max-width: 1280px;
+    text-align: center;
+    margin: 0 auto
+ }
+ .phototext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+ }
+ .our-menu{
+    background-color: rgb(12, 164, 12);
+    padding: 0.5rem;
+    width: fit-content;
+    color: white;
+ }
+ .explore-menu{
+    font-size: 1.5rem;
+    font-weight: 600;
+ }
+ .photo-grid{
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-areas: 
+    "image1 image1 image2 image3"
+    "image1 image1 image2 image7"
+    "image4 image5 image6 image7";
+    gap: 10px;
+    column-gap: 10px;
+    grid-column: 5px;
+
+ }
+ .grid-image{
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.5s;
+ }
+ .grid-image img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+ .grid-image:hover{
+    transform:scale(1.09);
+ }
+ #image1{
+    grid-area: image1;
+ }
+ #image2{
+    grid-area: image2;
+ }
+ #image3{
+    grid-area: image3;
+ }
+ #image4{
+    grid-area: image4;
+ }
+ #image5{
+    grid-area: image5;
+ }
+ #image6{
+    grid-area: image6;
+ }
+ #image7{
+    grid-area: image7;
+ }
+
+ /* footer */
+ .footer{
+   background-color: #fff0db;
+   margin: 0 auto;
+   
+ }
+ .footer-content{
+   padding: 2rem 0rem;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ .footer-grid{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   column-gap: 2rem;
+ }
+ .footer-section{
+   display: flex;
+   flex-direction: column;
+   gap: 0.45rem;
+ }
+ .gridhead{
+   color: grey;
+   font-weight: bold;
+   font-size: 1.2rem;
+ }
+ .gridtext{
+   font-size: 1.1rem ;
+ }
+ .social-logo{
+   display: flex;
+   gap: 1rem;
+ }
+.footer-input{
+   width: 15em;
+   height: 1.8rem;
+   padding-left: 2rem;
+   margin-bottom: 0.5rem;
+   margin-top: 0.5rem;
+}
+ 
+ .svg-logo{
+   height: 2rem;
+ }
+@media screen and (max-width:800px) {
+   .main-baar{
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+   }
+   .testimonial{
+      flex-direction: column;
+      align-items: center;
+   }
+   .footer-grid{
+      grid-template-columns: repeat(2,1fr);
+      row-gap: 2rem;
+      padding-left: 3.5rem;
+   }
+}
+@media screen and (max-width:450px) {
+   .footer-grid{
+      grid-template-columns: repeat(1,1fr);
+      row-gap: 2rem;
+      padding-left: 3.5rem;
+   }
+   .footer-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align:start;
+   }
+}
